@@ -8,6 +8,8 @@
 # Changed: Remove explicit mySQL table type which then allows for being able to use other
 #			database engines
 
+SET SQL_MODE='ALLOW_INVALID_DATES';
+
 CREATE TABLE `%dbprefix%companies` (
   `company_id` INT(10) NOT NULL auto_increment,
   `company_module` INT(10) NOT NULL default '0',
